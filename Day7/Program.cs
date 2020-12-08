@@ -80,7 +80,7 @@ namespace Day7
             List<Bag> AllBags = new List<Bag>();
             foreach(string Line in Input)
             {
-                string[] InnerBags = Line.Split(new string[] {" contain ", ", ", ".", " bags", " bag"}, StringSplitOptions.RemoveEmptyEntries);
+                string[] InnerBags = Line.Split(new string[] {" contain "," bags", " bag", ", ", "."}, StringSplitOptions.RemoveEmptyEntries);
                 if(!AllBags.Contains(AllBags.Where(x => x.Color == InnerBags[0]).FirstOrDefault()))
                 {
                     AllBags.Add(new Bag(InnerBags[0], InnerBags));
