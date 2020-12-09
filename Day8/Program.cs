@@ -71,7 +71,6 @@ namespace day8
                 List<string> ChangingInput = new List<string>(Input);
                 string[] SplitStep = ChangingInput[i].Split(" ");
                 string Step = SplitStep[0];
-                int StepAmount = Int32.Parse(SplitStep[1]);
                 if(Step == "jmp")
                 {
                     ChangingInput[i] = ChangingInput[i].Replace("jmp", "nop");
