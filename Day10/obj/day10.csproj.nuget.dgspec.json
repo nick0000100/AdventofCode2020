@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\v-nisor\\Desktop\\AdventCalendar\\Day10\\day10.csproj": {}
+    "C:\\Users\\v-nisor\\Desktop\\AdventCalendar\\day10\\day10.csproj": {}
   },
   "projects": {
-    "C:\\Users\\v-nisor\\Desktop\\AdventCalendar\\Day10\\day10.csproj": {
+    "C:\\Users\\v-nisor\\Desktop\\AdventCalendar\\day10\\day10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\v-nisor\\Desktop\\AdventCalendar\\Day10\\day10.csproj",
+        "projectUniqueName": "C:\\Users\\v-nisor\\Desktop\\AdventCalendar\\day10\\day10.csproj",
         "projectName": "day10",
-        "projectPath": "C:\\Users\\v-nisor\\Desktop\\AdventCalendar\\Day10\\day10.csproj",
+        "projectPath": "C:\\Users\\v-nisor\\Desktop\\AdventCalendar\\day10\\day10.csproj",
         "packagesPath": "C:\\Users\\v-nisor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\v-nisor\\Desktop\\AdventCalendar\\Day10\\obj\\",
+        "outputPath": "C:\\Users\\v-nisor\\Desktop\\AdventCalendar\\day10\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

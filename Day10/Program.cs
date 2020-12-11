@@ -60,13 +60,13 @@ namespace day10
 
         public static long GetPermutations(List<int> Input, int Position)
         {
-            int NextPostition = Position + 1;
             // Checking if the current number has been checked already
             if(Permutations.ContainsKey(Position))
             {
                 return Permutations[Position];
             }
             long Total = 0;
+            int NextPostition = Position + 1;
             if(Position == Input.Count - 1)
             {
                 return 1;
