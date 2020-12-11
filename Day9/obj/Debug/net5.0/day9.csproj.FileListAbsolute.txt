@@ -1,0 +1,16 @@
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\bin\Debug\net5.0\day9.exe
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\bin\Debug\net5.0\day9.deps.json
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\bin\Debug\net5.0\day9.runtimeconfig.json
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\bin\Debug\net5.0\day9.runtimeconfig.dev.json
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\bin\Debug\net5.0\day9.dll
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\bin\Debug\net5.0\ref\day9.dll
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\bin\Debug\net5.0\day9.pdb
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\obj\Debug\net5.0\day9.csprojAssemblyReference.cache
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\obj\Debug\net5.0\day9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\obj\Debug\net5.0\day9.AssemblyInfoInputs.cache
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\obj\Debug\net5.0\day9.AssemblyInfo.cs
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\obj\Debug\net5.0\day9.csproj.CoreCompileInputs.cache
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\obj\Debug\net5.0\day9.dll
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\obj\Debug\net5.0\ref\day9.dll
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\obj\Debug\net5.0\day9.pdb
+C:\Users\v-nisor\Desktop\AdventCalendar\Day9\obj\Debug\net5.0\day9.genruntimeconfig.cache
