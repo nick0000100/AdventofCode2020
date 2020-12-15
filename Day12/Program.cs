@@ -67,17 +67,17 @@ namespace day12
                         //East
                         Location = (Location.Item1, Location.Item2 + Amount);
                     }
-                    else if(Cardinal == 90 )
+                    else if(Cardinal == 90 || Cardinal == -90)
                     {
                         //South
                         Location = (Location.Item1 - Amount, Location.Item2);
                     }
-                    else if(Cardinal == 180)
+                    else if(Cardinal == 180 || Cardinal == -180)
                     {
                         //West
                         Location = (Location.Item1, Location.Item2 - Amount);
                     }
-                    else if(Cardinal == 270)
+                    else if(Cardinal == 270 || Cardinal == -270)
                     {
                         //North
                         Location = (Location.Item1 + Amount, Location.Item2);
