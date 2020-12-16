@@ -63,24 +63,24 @@ namespace day12
                 else if(Way == "F")
                 {
                     int Cardinal = Degrees % 360;
+                    //East
                     if(Cardinal == 0)
                     {
-                        //East
                         Location = (Location.Item1, Location.Item2 + Amount);
                     }
+                    //South
                     else if(Cardinal == 90 || Cardinal == -270)
                     {
-                        //South
                         Location = (Location.Item1 - Amount, Location.Item2);
                     }
+                    //West
                     else if(Cardinal == 180 || Cardinal == -180)
                     {
-                        //West
                         Location = (Location.Item1, Location.Item2 - Amount);
                     }
+                    //North
                     else if(Cardinal == 270 || Cardinal == -90)
                     {
-                        //North
                         Location = (Location.Item1 + Amount, Location.Item2);
                     }
                 }
