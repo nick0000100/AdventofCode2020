@@ -11,6 +11,7 @@ namespace day12
             List<string> Input = ReadInput();
             List<(string, int)> SeperatedInput = SeperateInput(Input);
             System.Console.WriteLine(GetManhattan(SeperatedInput));
+            System.Console.WriteLine(GetManhattan2(SeperatedInput));
         }
 
         public static List<string> ReadInput()
@@ -67,7 +68,7 @@ namespace day12
                         //East
                         Location = (Location.Item1, Location.Item2 + Amount);
                     }
-                    else if(Cardinal == 90 || Cardinal == -90)
+                    else if(Cardinal == 90 || Cardinal == -270)
                     {
                         //South
                         Location = (Location.Item1 - Amount, Location.Item2);
@@ -77,7 +78,7 @@ namespace day12
                         //West
                         Location = (Location.Item1, Location.Item2 - Amount);
                     }
-                    else if(Cardinal == 270 || Cardinal == -270)
+                    else if(Cardinal == 270 || Cardinal == -90)
                     {
                         //North
                         Location = (Location.Item1 + Amount, Location.Item2);
@@ -85,6 +86,57 @@ namespace day12
                 }
             }
             return Math.Abs(Location.Item1) + Math.Abs(Location.Item2);
+        }
+
+        public static int GetManhattan2(List<(string, int)> Input)
+        {
+            var Waypoint = (1,10);
+            var Location = (0,0);
+            foreach(var Direction in Input)
+            {
+                string Way = Direction.Item1;
+                int Amount = Direction.Item2;
+                if(Way == "N")
+                {
+                    Waypoint = (Waypoint.Item1 + Amount, Waypoint.Item2);
+                }
+                else if(Way == "S")
+                {
+                    Waypoint = (Waypoint.Item1 - Amount, Waypoint.Item2);
+                }
+                else if(Way == "E")
+                {
+                    Waypoint = (Waypoint.Item1, Waypoint.Item2 + Amount);
+                }
+                else if(Way == "W")
+                {
+                    Waypoint = (Waypoint.Item1, Waypoint.Item2 - Amount);
+                }
+                else if(Way == "L")
+                {
+                    Waypoint = RotatePoint(Waypoint, Amount);
+                }
+                else if(Way == "R")
+                {
+                    Waypoint = RotatePoint(Waypoint, -Amount);
+                }
+                else if(Way == "F")
+                {
+                    Location.Item1 += Waypoint.Item1 * Amount;
+                    Location.Item2 += Waypoint.Item2 * Amount;
+                }
+            }
+            return Math.Abs(Location.Item1) + Math.Abs(Location.Item2);
+        }
+
+        private static (int, int) RotatePoint((int, int) Waypoint,int Angle)
+        {
+            int Y = Waypoint.Item1;
+            int X = Waypoint.Item2;
+            var RadianAngle = (Math.PI / 180) * Angle;
+            var NewX = Convert.ToInt32((X * Math.Cos(RadianAngle)) - (Y * Math.Sin(RadianAngle)));
+            var NewY = Convert.ToInt32((Y * Math.Cos(RadianAngle)) + (X * Math.Sin(RadianAngle)));
+            return (NewY, NewX);
         }
 
         public static List<(string, int)> SeperateInput(List<string> Input)
